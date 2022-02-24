@@ -24,14 +24,38 @@
                 <li><a href="contacto.html">Contacto</a></li>   
             </ul>
         </nav>
-        <!-- SECCION -->
-        <section id="inicio">
-            <h1>Paz Secundini</h1>
-            <h2>página de artista</h2>
-            <p class="centrado">
-            <a href="#galeria"><img src="../flecha.jpg" width="50"/></a>
-            </p>
-        </section>    
+         <!-- SECCION -->
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <form action="" id="form">
+                <fieldset>
+                    <legend>Si llegaste hasta acá dejame un mensaje</legend>
+                    <table border="1">
+                        <td>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" nombre="nombre" id="nombre">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Enviar mensaje">
+                <br>
+                
+            </fieldset>
+            </form>
+        </section>
         <!-- PIE -->
         <footer>
             <a title="Instagram" href="http://www.instagram.com" target="_blank">
