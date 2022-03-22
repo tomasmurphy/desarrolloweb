@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,100&display=swap');
 @font-face {
   font-family: 'Paz';
-  src: url('../fuente/Paz-Regular.ttf') format('truetype');
+  src: url('../fuente/Paz-Regular\ \(1\).ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -57,15 +57,15 @@ nav {
 body{
   background-color: #132f57;
 }
-  body .grid {
+  .grid {
     display:grid;
     grid-template-columns: 100%;
-    grid-template-areas: "inicio" "galeria" "bio" "sobre_mi_trabajo" "contacto" "pie";
+    grid-template-areas: "inicio" "galeria" "bio" "statement" "contacto" "pie";
   }
   #inicio {grid-area: inicio}
   #galeria {grid-area: galeria}
   #bio {grid-area: bio}
-  #sobre_mi_trabajo {grid-area: sobre_mi_trabajo}
+  #statement {grid-area: statement}
   #contacto {grid-area: contacto}
   footer {grid-area: pie}
 /* INICIO  */
@@ -82,10 +82,17 @@ body{
   flex-direction: column;
   flex-wrap: nowrap;
 }
+#inicio h1 a{
+  font-weight: 400;
+  font-size: 2rem;
+  color: #e6eaf0;
+}
 #inicio h1{
   font-weight: 400;
-  margin-right: 10%;
-  margin-top: 13rem
+  margin-right: 17%;
+  margin-top: 13rem;
+  font-size: 2rem;
+  color: #e6eaf0;
 }
 #inicio a{
   font-size: 2.5rem;
@@ -166,6 +173,10 @@ body{
   width: 70%;
   border-radius: 2rem;
   margin: 5%;
+  transition: all 2s;
+}
+#statement img:hover{
+  width: 80%
 }
 /* CONTACTO  */
 #contacto {
@@ -185,10 +196,15 @@ body{
 }
 #contacto .caja{
   width: 80%;
-  height: 20rem;
+  height: auto;
   font-size: 1.7rem;
   background-color: #0b1829;
   padding: 5%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  vertical-align: bottom;
 }
 #contacto div .flex{
   display: flex;
@@ -208,20 +224,49 @@ body{
   text-align: left;
   margin: 0 1.2rem 0 0;
   list-style-type: none;
+  margin: 5%;
 }
   #contacto ul li a{
     margin: 0 1.2rem 0 0;
     color: #e5e9ee;
     justify-content: center;
     align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
-  #contacto ul li img{
-    margin-left: 20%;
-    margin-right: 5%;
-    width: 10%;
+  #contacto ul li a:hover{
+    color: #7e8288;
   }
 #contacto h2{
   padding-top: 8%;
+}
+#contacto input{
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #132f57;
+  padding-left: 2%;
+}
+#contacto textarea{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #132f57;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+#contacto .boton{
+  border: .5rem solid #0b1829;
+  opacity: 1;
+  background-color: #0b1829;
+  color: #e5e9ee;
+  padding-top: 5%;
+  transition: all 1s;
+}
+#contacto .boton:hover{
+  color: #7e8288;
+  font-size: 2rem;
+}
+.desktop{
+  display: none;
 }
 /* ETIQUETAS */
 h1 {  
@@ -284,6 +329,9 @@ a {
   }
 .negrita{
   font-weight: bold;
+}
+.flechaGrande{
+  font-size: 2.5rem;
 }
 /* QUERY BREAK */
 /* 280 768 1024  display:none 415 a 834*/
@@ -369,13 +417,13 @@ a {
   #contacto .caja{
     width: 40%;
     height: 61.7vh;
-    font-size: 1.7rem;
+    font-size: 2rem;
     background-color: #0b1829;
     padding: 5%;
   }
   #contacto ul li img{
-    margin-left: 30%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     width: 10%;
   }
   #contacto h2{
@@ -388,5 +436,13 @@ a {
     width: 100%;
     height: 100vh;
   }
-  
+}
+@media only screen and (min-width: 900px){
+  /* CONTACTO */
+  .mobile{
+    display: none;
+  }
+  .desktop{
+    display: block;
+}
 }
