@@ -1,0 +1,11 @@
+// VARIABLES
+$azul:#132f57;
+$blanco: #e5e9ee;
+$gris:#7e8288;
+$padmob: 8%;
+$padesk: 3%;
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}

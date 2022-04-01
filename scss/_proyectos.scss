@@ -1,0 +1,259 @@
+@import "_variables.scss";
+/* CV  */
+#cv{
+  background-color: $blanco;
+  font-family: 'Josefin';
+  & h1{
+    background-color: $azul;
+    color: $blanco;
+    font-family: 'Josefin';
+    padding: 1%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+  }
+  & h3{
+    background-color: $azul ;
+    color: $blanco;
+    font-family: 'Josefin';
+    padding: 1%;
+    margin-bottom: 1%;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  & hr {
+    color: $azul;
+  }
+  & p{
+    background-color: $blanco;
+    color: $azul;
+    font-family: 'Josefin';
+    text-align: left;
+    font-size: 1rem;
+      @include desktop{
+        &{
+          font-size: 1.2rem;
+        }
+      }
+  }
+  & a{
+    background-color: $blanco;
+    color: $azul;
+    font-family: 'Josefin';
+    text-align: left;
+    font-size: 1rem;
+      &:hover { 
+        color: #7e8288;
+      }
+      @include desktop{
+        &{
+          font-size: 1.2rem;
+        }
+      }
+  }
+  @include desktop{
+    .imgRedonda.floatRigth{
+      float: right;
+      margin-top: 5%;
+      margin-right: 15%;
+    }
+  }
+}
+/* PARQUES NACIONALES */
+#parquesNacionales{
+  padding-top: $padmob;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+    @include desktop{
+      &{
+        padding-top: $padesk;
+      }
+    }
+  // & p{
+  //   width: auto;
+  //   background-color: $blanco;
+  //   color: $azul;
+  //   font-weight: bold;
+  //   font-size: 1.7rem;
+  //   padding-bottom: 1%;
+  // }
+  & h2{
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & a{
+    font-size: .8rem;
+    color: $blanco;
+    padding: .8rem;
+    font-family: "Josefin";
+    
+    
+  }
+  & .centrarImagenes{
+    justify-self: center;
+  }
+  & figcaption{
+    font-size: 1.5rem;
+    color: $azul;
+    font-weight: bold;
+  }
+}
+/* COLOUR ME IN */
+#colourMeIn{
+  padding-top: $padmob;
+  width: auto;
+  background-color:$blanco;
+  text-decoration-color:$azul;
+    @include desktop{
+      &{
+        padding-top: $padesk;
+      }
+    }
+    & p{
+      width: auto;
+      background-color: $blanco;
+      color: $azul;
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding-bottom: 1%;
+    }
+    & h2{
+      width: auto;
+      background-color: $blanco;
+      color: $azul;
+    }
+    & div{
+      margin: 0;
+      padding:0 ;
+    }
+}
+/* SUELOS DEL SUR */
+#suelosDelSur{
+  padding-top: $padmob;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+    @include desktop{
+      &{
+        padding-top: $padesk;
+      }
+    }
+    & p{
+      width: auto;
+      background-color: $blanco;
+      color: $azul;
+      font-weight: bold;
+      font-size: 1.7rem;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      padding-left: 4%;
+      padding-right: 4%;
+        @include desktop{
+          &{
+            padding-top: 3%;
+            padding-left: 0%;
+            padding-right: 0%;
+          }
+        }
+    }
+    & .p{
+      color: $azul;
+    }
+    & h2{
+      width: auto;
+      background-color: $blanco;
+      color: $azul;
+    }
+    & img{
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-right: 10%;
+      padding-left: 10%;
+      border-radius: 20%;
+        @include desktop{
+          &{
+            padding-right: 3%;
+            padding-left: 3%;
+          }
+        }
+    }
+    & iframe{
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-right: 8%;
+      padding-left: 8%;
+      border-radius: 15%;
+      @include desktop{
+        &{
+          padding-right: 2.1%;
+          padding-left: 2.1%;
+          border-radius: 5%
+        }
+      }
+    }
+    @include desktop{
+      & .cajaFigure{
+        padding-right: 3%;
+        padding-left: 3%;
+        align-self: center;
+      }
+      & .imgDefor{
+        width: 100%;
+      }
+    }
+}
+/* LOS PAISAJES DEL FRIO */
+#losPaisajesDelFrio{
+  padding-top: $padmob;
+  width: auto;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+    @include desktop{
+      &{
+        padding-top: $padesk;
+      }
+    }
+  & p{
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+    width: auto;
+  }
+  & .cajaImg{
+    background-color: $blanco;
+    color: $azul;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 1rem;
+    transition: all 2s;
+      & img{
+        padding: 3%;
+      }
+      &:hover{
+        width: 100%;
+      }
+      @include desktop{
+        &{
+          width: 50%;
+          &:hover{
+            width: 80%;
+          }
+        }
+      }
+  }
+  & h2{
+    width: auto;
+    background-color: $azul;
+    color: $blanco;
+  }
+  @include desktop{
+    & .row{
+      margin-bottom: 1rem;
+    }
+  }
+}

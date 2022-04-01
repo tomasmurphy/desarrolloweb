@@ -108,7 +108,7 @@ body{
 /* PROYECTOS  */
 #proyectos{
   width: 100%;
-  height: 82vw;
+  height: auto;
   background-color: #e5e9ee;
   text-decoration-color: #132f57;
   block-size: auto;
@@ -135,8 +135,8 @@ body{
         opacity: .8;
         border-radius: 1rem;
       }
-      #proyectos img:hover{
-        opacity: .5;
+      #proyectos .carousel-item:hover{
+        opacity: .6;
       }
 /* BIO  */
 #bio{
@@ -152,6 +152,10 @@ body{
   }
 #bio p{
   padding-bottom: 1%;
+  /* word-spacing: .1%; */
+}
+#bio img{
+  border: .15rem solid #e5e9ee;
 }
 /* STATEMENT  */
 #statement{
@@ -208,7 +212,7 @@ body{
   opacity: .8;
 }
 #contacto .caja{
-  height: 79vh;
+  height: 100%;
   font-size: 1.7rem;
   background-color: #0b1829;
   padding-top: 2%;
@@ -346,6 +350,16 @@ hr {
         font-size: 1.5rem;
         color: #132f57;
         font-weight: bold;
+      }
+      /* #parquesNacionales .visible{
+        display: none;
+        visibility: hidden;
+        transition: all 2s; */
+        /* } */
+      #parquesNacionales .visible:hover{
+        display: block;
+        visibility: visible;
+        z-index: 100000;
       }
 /* COLOUR ME IN */
 #colourMeIn{
@@ -565,6 +579,16 @@ a {
     margin-right: 3%;
     background-color: #e5e9ee;
   }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #e5e9ee;
+    text-align: center;
+  }
   /* BIO  */
   #bio{
     padding-top: 3%;
@@ -596,6 +620,9 @@ a {
   /* CONTACTO */
   #contacto h2{
     padding-top: 3%;
+  }
+  #contacto .caja{
+    height: 79vh;
   }
   /* CV  */
   .imgRedonda.floatRigth{
