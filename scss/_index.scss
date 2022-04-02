@@ -38,11 +38,11 @@
   .atrasDeImagen{
       width: 100%;
       height: 2.5rem;
-      background: #e5e9ee;
+      background: $blanco;
       position: fixed;
       z-index: 1;
-      color: #132f57;
-      border-bottom: .05rem solid #132f57;
+      color: $azul;
+      border-bottom: .05rem solid $azul;
   }
 }
 /* PROYECTOS  */
@@ -66,31 +66,94 @@
 }
 #proyectos a{
     font-size: 1.8rem;
-    color: $blanco;
+    color: $azul;
     @include desktop{
         &{
             font-size: 2.5rem;
         }
     }
 }
-#proyectos p a{
-  width: auto;
-  color: $azul;
-}
-#proyectos .carousel-item:hover{
-    opacity: .6;
-}
-@include desktop{
-    .carousel-caption {
-        position: absolute;
-        right: 15%;
-        bottom: 7%;
-        left: 15%;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        color: #e5e9ee;
-        text-align: center;
+#proyectos h3{
+  margin: auto;
+  padding: auto;
+  width: 4rem;
+  height: 2rem;
+  border-top-left-radius:  1rem;
+  background-color: $azul;
+  opacity: .8;
+  font-family: "Josefin";
+  font-size: 1.2rem;
+  padding-top: .3rem;
+    &:hover{
+      opacity: .7;
+      color: $gris;
     }
+    @include desktop{
+      width: 6rem;
+      height: 2rem;
+      border-radius:  1rem;
+      padding-top: .2rem;
+    }
+}
+#proyectos h5{
+  margin: auto;
+  font-size: 1.7rem;
+  color: $blanco;
+    @include desktop{
+      font-size: 2.2rem;
+      padding-bottom: 1rem;
+    }
+}
+.carousel-caption {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+          @include desktop{
+            padding-bottom: 1rem;
+          }
+}
+@include mobile{
+  .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: auto;
+    height: 55%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+  }
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 10%;
+    height: 55%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+  }
 }
 /* BIO  */
 #bio{
@@ -111,10 +174,9 @@
 }
 #bio p{
     padding-bottom: 1%;
-    /* word-spacing: .1%; */
 }
 #bio img{
-    border: .15rem solid #e5e9ee;
+    border: .15rem solid $blanco;
 }
 @include desktop{
   .imgRedonda.floatLeft{

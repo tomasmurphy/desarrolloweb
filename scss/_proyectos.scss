@@ -29,6 +29,7 @@
     font-family: 'Josefin';
     text-align: left;
     font-size: 1rem;
+    font-weight: 400;
       @include desktop{
         &{
           font-size: 1.2rem;
@@ -69,14 +70,6 @@
         padding-top: $padesk;
       }
     }
-  // & p{
-  //   width: auto;
-  //   background-color: $blanco;
-  //   color: $azul;
-  //   font-weight: bold;
-  //   font-size: 1.7rem;
-  //   padding-bottom: 1%;
-  // }
   & h2{
     width: auto;
     background-color: $blanco;
@@ -209,6 +202,7 @@
   width: auto;
   background-color: $azul;
   text-decoration-color: $blanco;
+  border-bottom: .08rem solid $gris;
     @include desktop{
       &{
         padding-top: $padesk;
@@ -255,5 +249,8 @@
     & .row{
       margin-bottom: 1rem;
     }
+  }
+  & footer{
+    border-top: .2px solid $gris;
   }
 }

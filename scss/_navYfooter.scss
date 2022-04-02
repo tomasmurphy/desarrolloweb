@@ -7,7 +7,7 @@ nav {
     display: flex;
     & ul{
         text-align: center;
-        color: #132f57;
+        color: $azul;
         list-style-type: none;
         opacity: 1;
         position: fixed;
@@ -18,7 +18,7 @@ nav {
         @media only screen and (min-width: 768px){
             &{
                 text-align: right;
-                color: #132f57;
+                color: $azul;
                 list-style-type: none;
                 opacity: 1;
                 position: fixed;
@@ -29,7 +29,7 @@ nav {
         }
         &:hover {
             list-style-type: none;
-            color: #132f57;
+            color: $azul;
             opacity: 1;
         }
         & li {
@@ -50,7 +50,7 @@ nav {
                   } 
             }
             & a:hover{
-                color: #7e8288;
+                color: $gris;
                 opacity: 1;
                 z-index: 1;
             }
@@ -59,7 +59,7 @@ nav {
 }
 .navMobile{
   display: flex;
-  border-bottom:.2rem solid #132f57;
+  border-bottom:.2rem solid $azul;
   @media only screen and (min-width: 768px){
     &{
       display: none;
@@ -87,11 +87,10 @@ footer{
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.3rem;
-  background-color: #132f57;
-  border-top: .2px solid $gris;
+  background-color: $azul;
   & a{
     width: 100%;
-    color: #e5e9ee;
+    color: $blanco;
     text-justify: center;
     margin: auto;
     font-size: 1.7rem;

@@ -9,3 +9,8 @@ $padesk: 3%;
     @content;
   }
 }
+@mixin mobile {
+  @media screen and (max-width: 767.9px) {
+    @content;
+  }
+}
