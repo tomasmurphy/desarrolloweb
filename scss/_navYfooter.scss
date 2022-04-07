@@ -3,7 +3,6 @@
 nav {
   opacity: 1;
   position: fixed;
-  z-index: 3;
   display: flex;
   & ul {
     text-align: center;
@@ -12,31 +11,30 @@ nav {
     opacity: 1;
     position: fixed;
     width: 100%;
-    z-index: 3;
     background-color: white;
     padding-top: 0.5%;
     @media only screen and (min-width: 768px) {
       & {
         text-align: right;
-        color: $azul;
+        color: map-get($map: $paleta, $key: uno );
         list-style-type: none;
         opacity: 1;
         position: fixed;
-        width: 100%;
-        height: 20vh;
+        width: auto;
+        height: 2.5rem;
         background-color: initial;
       }
     }
     &:hover {
       list-style-type: none;
-      color: $azul;
+      color: map-get($map: $paleta, $key: uno );
       opacity: 1;
     }
     & li {
       display: inline;
       text-align: center;
       margin: 0 1.2rem 0 0;
-      & a img {
+      & img {
         width: 1.5rem;
         @media only screen and (min-width: 288px) {
           & {
@@ -50,16 +48,15 @@ nav {
         }
       }
       & a:hover {
-        color: $gris;
+        color: map-get($map: $paleta, $key: tres);
         opacity: 1;
-        z-index: 1;
       }
     }
   }
 }
 .navMobile {
   display: flex;
-  border-bottom: 0.2rem solid $azul;
+  border-bottom: 0.2rem solid map-get($map: $paleta, $key: uno);
   @media only screen and (min-width: 768px) {
     & {
       display: none;
@@ -71,13 +68,26 @@ nav {
   @media only screen and (min-width: 768px) {
     & {
       display: flex;
+      justify-content: flex-end;
     }
+  }
+}
+.logo {
+  display: flex;
+  height: 2.5rem;
+  width: 50%;
+  z-index: 1;
+  & a {
+    margin: auto;
+    font-weight: bold;
   }
 }
 /* FOOTER  */
 footer {
   width: 100%;
-  height: 2.5rem;
+  position: fixed;
+  bottom: 0;
+  height: 2.6rem;
   display: flex;
   text-justify: center;
   align-self: center;
@@ -87,10 +97,10 @@ footer {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.3rem;
-  background-color: $azul;
+  background-color: map-get($map: $paleta, $key: uno );
   & a {
     width: 100%;
-    color: $blanco;
+    color: map-get($map: $paleta, $key: dos );
     text-justify: center;
     margin: auto;
     font-size: 1.7rem;
@@ -100,4 +110,7 @@ footer {
       font-size: 1.7rem;
     }
   }
+}
+.borde {
+  border-top: 0.08rem solid map-get($map: $paleta, $key: tres );
 }

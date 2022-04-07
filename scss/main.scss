@@ -1,6 +1,7 @@
-// npm run watch-css
+// npm run watch-css / 72 dpi color rgb /breadcrum / googlesearch console/ desafio map mixin y extend
 // IMPORTS 
-@import "_fonts.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "_fonts";
 @import "_general.scss";
 @import "_navYfooter.scss";
 @import "_index.scss";

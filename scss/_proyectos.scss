@@ -3,6 +3,7 @@
 #cv {
   background-color: $blanco;
   font-family: "Josefin";
+  padding-bottom: $footer;
   & h1 {
     background-color: $azul;
     color: $blanco;
@@ -19,15 +20,15 @@
     padding-left: 2%;
     font-size: 1.1rem;
     width: 100%;
-    border-top-right-radius:  3rem;
+    border-top-right-radius: 3rem;
     border-bottom-right-radius: 1rem;
-      &:hover{
-        color: $gris;
-        opacity: .9;
-      }
-      @include desktop{
-        width: 60%;
-      }
+    &:hover {
+      color: $gris;
+      opacity: 0.9;
+    }
+    @include desktop {
+      width: 60%;
+    }
   }
   & hr {
     color: $azul;
@@ -61,7 +62,7 @@
       }
     }
   }
-  .imgRedonda{
+  .imgRedonda {
     margin-left: 5%;
     margin-bottom: 2rem;
   }
@@ -69,6 +70,7 @@
 /* PARQUES NACIONALES */
 #parquesNacionales {
   padding-top: $padmob;
+  padding-bottom: $footer;
   width: auto;
   background-color: $blanco;
   text-decoration-color: $azul;
@@ -96,13 +98,14 @@
     color: $azul;
     font-weight: bold;
   }
-  & img{
+  & img {
     width: 100%;
   }
 }
 /* COLOUR ME IN */
 #colourMeIn {
   padding-top: $padmob;
+  padding-bottom: $footer;
   width: auto;
   background-color: $blanco;
   text-decoration-color: $azul;
@@ -132,6 +135,7 @@
 /* SUELOS DEL SUR */
 #suelosDelSur {
   padding-top: $padmob;
+  padding-bottom: $footer;
   width: auto;
   background-color: $blanco;
   text-decoration-color: $azul;
@@ -196,6 +200,7 @@
       align-self: center;
     }
     & .imgDefor {
+      @extend .cajaFigure;
       width: 100%;
     }
   }
@@ -203,10 +208,10 @@
 /* LOS PAISAJES DEL FRIO */
 #losPaisajesDelFrio {
   padding-top: $padmob;
+  padding-bottom: $footer;
   width: auto;
   background-color: $azul;
   text-decoration-color: $blanco;
-  border-bottom: 0.08rem solid $gris;
   @include desktop {
     & {
       padding-top: $padesk;
@@ -218,12 +223,12 @@
     font-size: 1.5rem;
     margin: 0;
     width: 100%;
-      & .letraComun{
-        font-family: "Serafin";
-        font-size: .8rem;
-        color: $gris;
-        font-weight: 300;
-      }
+    & .letraComun {
+      font-family: "Serafin";
+      font-size: 0.8rem;
+      color: $gris;
+      font-weight: 300;
+    }
   }
   & .cajaImg {
     background-color: $blanco;
@@ -261,8 +266,89 @@
       margin-bottom: 1rem;
     }
   }
-  & footer {
-    border-top: 0.2px solid $gris;
+}
+/* REVELADOS ORGANICOS */
+#reveladosOrganicos {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & p {
+    color: $azul;
+    font-weight: bold;
+    & a {
+      color: $azul;
+      font-weight: bold;
+      font-family: "Paz";
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        color: $gris;
+      }
+    }
+  }
+  & img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  & figure {
+    position: relative;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  & figure a {
+    color: $blanco;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-family: "Josefin";
+    text-align: end;
+    background: saddlebrown;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    right: 0.8rem;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    border-left: 1.7rem dashed black;
+    border-right: 1.7rem dashed black;
+      &:hover{
+        opacity: 0;    
+      }
+  }
+  & .cajaCelu {
+    border: solid 0.5rem $azul;
+    border-radius: 2rem;
+    width: auto;
+    & img {
+      border-radius: 2rem;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  & .centrar {
+    padding-left: 50%;
   }
 }
-
