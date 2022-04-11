@@ -8,15 +8,21 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Paz Secundini - página de artista</title>
-    <meta name="description" content="Página de artista de Paz Secundini" />
+    <meta name="description" content="Arte naturalista. Obras y procesos." />
     <meta
       name="keywords"
       content="arte, artesania, fotografia, tintes naturales, revelado organico, estenopeica, analogica, ceramica, escultura, bellas artes"
     />
     <meta name="author" content="Tomás Murphy" />
     <meta name="copyright" content="Todos los derechos reservados" />
+    <meta property='og:type' content='article' />
+    <meta property='og:title' content='Paz Secundini' />
+    <meta property='og:description' content='Arte naturalista. Obras y procesos.' />
+    <meta property='og:image' content='https://pazsecundini.com.ar/img/index/bio.png' />
+    <meta property='og:url' content='https://pazsecundini.com.ar' />
+    <meta property='og:site_name' content='Paz Secundini' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reducido.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -312,13 +318,18 @@
           <div class="caja col-12 col-md-6">
             <form action="./php/enviar.php" method="POST" id="form">
               <div class="formulario fs-3">
-                <label for="nombre">Nombre</label>
-                <input type="text" nombre="nombre" id="nombre" />
+                <label for="name">Nombre</label>
+                <input type="text" nombre="name" id="name" class="" />
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" />
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" rows="3" id="mensaje"></textarea>
-                <input class="boton" type="submit" value="Enviar mensaje" />
+                <input type="email" name="email" id="email" class="" />
+                <label for="message">Mensaje</label>
+                <textarea name="message" rows="3" id="message"></textarea>
+                <input
+                  class="boton"
+                  type="submit"
+                  value="Enviar mensaje"
+                  class=""
+                />
               </div>
             </form>
           </div>
@@ -418,5 +429,6 @@
     </section>
     <!-- SCRIPTS  -->
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

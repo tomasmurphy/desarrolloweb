@@ -7,7 +7,7 @@ clases donde usarlo. Entiendo que si va a ser util de arranque en algun proximo 
 
 ***Index***
 Titulo: Paz Secundini - página de artista
-Descripcion: "Página de artista de Paz Secundini"
+Descripcion: "Arte naturalista. Obras y procesos."
 Palabras clave: "arte, artesania, fotografia, revelado organico, estenopeica, analogica, ceramica, escultura, bellas artes"
 Autor: "Tomás Murphy"
 Copyright: "Todos los derechos reservados"

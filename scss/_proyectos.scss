@@ -270,7 +270,7 @@
 /* REVELADOS ORGANICOS */
 #reveladosOrganicos {
   padding-top: $padmob;
-  padding-bottom: $footer;
+  padding-bottom: $footer*1.5;
   width: auto;
   background-color: $blanco;
   text-decoration-color: $azul;
@@ -338,9 +338,13 @@
       }
   }
   & .cajaCelu {
-    border: solid 0.5rem $azul;
+    border: solid 0.2rem $azul;
     border-radius: 2rem;
     width: auto;
+     @include desktop{
+      border: solid 0.3rem $azul;
+       
+     }
     & img {
       border-radius: 2rem;
     }

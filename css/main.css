@@ -8052,7 +8052,9 @@ footer {
     color: #132f57; }
     @media screen and (min-width: 768px) {
       #proyectos a {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem; }
+      #proyectos a:hover {
+        color: #7e8288; } }
   #proyectos h3, #proyectos .h3 {
     margin: auto;
     padding: auto;
@@ -8477,7 +8479,7 @@ footer {
 /* REVELADOS ORGANICOS */
 #reveladosOrganicos {
   padding-top: 2.5rem;
-  padding-bottom: 2.6rem;
+  padding-bottom: 3.9rem;
   width: auto;
   background-color: #e5e9ee;
   text-decoration-color: #132f57; }
@@ -8533,9 +8535,12 @@ footer {
     #reveladosOrganicos figure a:hover {
       opacity: 0; }
   #reveladosOrganicos .cajaCelu {
-    border: solid 0.5rem #132f57;
+    border: solid 0.2rem #132f57;
     border-radius: 2rem;
     width: auto; }
+    @media screen and (min-width: 768px) {
+      #reveladosOrganicos .cajaCelu {
+        border: solid 0.3rem #132f57; } }
     #reveladosOrganicos .cajaCelu img {
       border-radius: 2rem; }
     #reveladosOrganicos .cajaCelu:hover {

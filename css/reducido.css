@@ -341,6 +341,11 @@ iframe {
 .gy-5 {
   --bs-gutter-y: 3rem; }
 
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%; } }
+
 @media (min-width: 768px) {
   .col-md-3 {
     flex: 0 0 auto;
@@ -354,6 +359,17 @@ iframe {
   .col-md-8 {
     flex: 0 0 auto;
     width: 66.66667%; } }
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.33333%; }
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333%; }
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%; } }
 
 .table {
   --bs-table-bg: transparent;
@@ -602,6 +618,9 @@ iframe {
 .d-none {
   display: none !important; }
 
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
 .w-100 {
   width: 100% !important; }
 
@@ -621,11 +640,17 @@ iframe {
 .mt-3 {
   margin-top: 1rem !important; }
 
+.mb-5 {
+  margin-bottom: 3rem !important; }
+
 .p-0 {
   padding: 0 !important; }
 
 .p-2 {
   padding: 0.5rem !important; }
+
+.p-3 {
+  padding: 1rem !important; }
 
 .fs-3 {
   font-size: calc(1.3rem + 0.6vw) !important; }
@@ -646,8 +671,16 @@ iframe {
 
 /* rtl:end:remove */
 
+.bg-body {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important; }
+
 .rounded {
   border-radius: 0.25rem !important; }
+
+@media (min-width: 576px) {
+  .pt-sm-5 {
+    padding-top: 3rem !important; } }
 
 @media (min-width: 768px) {
   .d-md-block {
@@ -918,7 +951,9 @@ footer {
     color: #132f57; }
     @media screen and (min-width: 768px) {
       #proyectos a {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem; }
+      #proyectos a:hover {
+        color: #7e8288; } }
   #proyectos h3, #proyectos .h3 {
     margin: auto;
     padding: auto;
@@ -1063,7 +1098,8 @@ footer {
     height: auto;
     font-size: 1.7rem;
     background-color: #0b1829;
-    opacity: 0.8; }
+    opacity: 0.8;
+    z-index: 8000; }
   #contacto .caja {
     height: 100%;
     font-size: 1.7rem;
@@ -1149,7 +1185,7 @@ footer {
     border-bottom-right-radius: 1rem; }
     #cv h3:hover, #cv .h3:hover {
       color: #7e8288;
-      opacity: .9; }
+      opacity: 0.9; }
     @media screen and (min-width: 768px) {
       #cv h3, #cv .h3 {
         width: 60%; } }
@@ -1200,6 +1236,8 @@ footer {
     color: #e5e9ee;
     padding: 0.8rem;
     font-family: "Josefin"; }
+  #parquesNacionales .centrarImagenes {
+    justify-self: center; }
   #parquesNacionales figcaption {
     font-size: 1.5rem;
     color: #132f57;
@@ -1281,7 +1319,7 @@ footer {
         padding-right: 2.1%;
         padding: 2.1%; } }
   @media screen and (min-width: 768px) {
-    #suelosDelSur .cajaFigure {
+    #suelosDelSur .cajaFigure, #suelosDelSur .imgDefor {
       padding-right: 3%;
       padding-left: 3%;
       align-self: center; }
@@ -1306,7 +1344,7 @@ footer {
     width: 100%; }
     #losPaisajesDelFrio p .letraComun {
       font-family: "Serafin";
-      font-size: .8rem;
+      font-size: 0.8rem;
       color: #7e8288;
       font-weight: 300; }
   #losPaisajesDelFrio .cajaImg {
@@ -1336,6 +1374,76 @@ footer {
   @media screen and (min-width: 768px) {
     #losPaisajesDelFrio .row {
       margin-bottom: 1rem; } }
+
+/* REVELADOS ORGANICOS */
+#reveladosOrganicos {
+  padding-top: 2.5rem;
+  padding-bottom: 3.9rem;
+  width: auto;
+  background-color: #e5e9ee;
+  text-decoration-color: #132f57; }
+  @media screen and (min-width: 768px) {
+    #reveladosOrganicos {
+      padding-top: 2.5rem; } }
+  #reveladosOrganicos h2, #reveladosOrganicos .h2 {
+    width: auto;
+    background-color: #e5e9ee;
+    color: #132f57; }
+  #reveladosOrganicos p {
+    color: #132f57;
+    font-weight: bold; }
+    #reveladosOrganicos p a {
+      color: #132f57;
+      font-weight: bold;
+      font-family: "Paz";
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0; }
+      #reveladosOrganicos p a:hover {
+        color: #7e8288; }
+  #reveladosOrganicos img {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  #reveladosOrganicos figure {
+    position: relative;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    margin: 0; }
+  #reveladosOrganicos figure a {
+    color: #e5e9ee;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-family: "Josefin";
+    text-align: end;
+    background: saddlebrown;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    right: 0.8rem;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    border-left: 1.7rem dashed black;
+    border-right: 1.7rem dashed black; }
+    #reveladosOrganicos figure a:hover {
+      opacity: 0; }
+  #reveladosOrganicos .cajaCelu {
+    border: solid 0.2rem #132f57;
+    border-radius: 2rem;
+    width: auto; }
+    @media screen and (min-width: 768px) {
+      #reveladosOrganicos .cajaCelu {
+        border: solid 0.3rem #132f57; } }
+    #reveladosOrganicos .cajaCelu img {
+      border-radius: 2rem; }
+    #reveladosOrganicos .cajaCelu:hover {
+      opacity: 0.5; }
 
 figure {
   position: relative;
