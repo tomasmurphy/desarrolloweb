@@ -1,9 +1,13 @@
 @import "_variables.scss";
 /* NAVEGACION */
+
 nav {
   opacity: 1;
   position: fixed;
   display: flex;
+  .sombra {
+    text-shadow: 0px 0.5px $azul;
+  }
   & ul {
     text-align: center;
     color: $azul;
@@ -16,7 +20,7 @@ nav {
     @media only screen and (min-width: 768px) {
       & {
         text-align: right;
-        color: map-get($map: $paleta, $key: uno );
+        color: map-get($map: $paleta, $key: uno);
         list-style-type: none;
         opacity: 1;
         position: fixed;
@@ -27,7 +31,7 @@ nav {
     }
     &:hover {
       list-style-type: none;
-      color: map-get($map: $paleta, $key: uno );
+      color: map-get($map: $paleta, $key: uno);
       opacity: 1;
     }
     & li {
@@ -97,10 +101,10 @@ footer {
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1.3rem;
-  background-color: map-get($map: $paleta, $key: uno );
+  background-color: map-get($map: $paleta, $key: uno);
   & a {
     width: 100%;
-    color: map-get($map: $paleta, $key: dos );
+    color: map-get($map: $paleta, $key: dos);
     text-justify: center;
     margin: auto;
     font-size: 1.7rem;
@@ -112,5 +116,5 @@ footer {
   }
 }
 .borde {
-  border-top: 0.08rem solid map-get($map: $paleta, $key: tres );
+  border-top: 0.08rem solid map-get($map: $paleta, $key: tres);
 }

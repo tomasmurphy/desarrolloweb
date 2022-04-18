@@ -15,12 +15,18 @@
     />
     <meta name="author" content="Tomás Murphy" />
     <meta name="copyright" content="Todos los derechos reservados" />
-    <meta property='og:type' content='article' />
-    <meta property='og:title' content='Paz Secundini' />
-    <meta property='og:description' content='Arte naturalista. Obras y procesos.' />
-    <meta property='og:image' content='https://pazsecundini.com.ar/img/index/bio.png' />
-    <meta property='og:url' content='https://pazsecundini.com.ar' />
-    <meta property='og:site_name' content='Paz Secundini' />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Paz Secundini" />
+    <meta
+      property="og:description"
+      content="Arte naturalista. Obras y procesos."
+    />
+    <meta
+      property="og:image"
+      content="https://pazsecundini.com.ar/img/index/bio.png"
+    />
+    <meta property="og:url" content="https://pazsecundini.com.ar" />
+    <meta property="og:site_name" content="Paz Secundini" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/reducido.css" />
     <link
@@ -28,6 +34,15 @@
       type="image/x-icon"
       href="./img/index/pazsecundini4x4.png"
     />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-D61RNEWG91");
+    </script>
   </head>
   <body class="grid">
     <!-- NAV MOBILE -->
@@ -57,15 +72,13 @@
         <li>
           <a href="#statement"
             ><img
-              src="./img/index//cuaderno.gif"
+              src="./img/index/cuaderno.gif"
               alt="Icono de statement - cuaderno"
           /></a>
         </li>
         <li>
           <a href="#contacto"
-            ><img
-              src="./img/index//mensaje.gif"
-              alt="Icono de contacto - sobre"
+            ><img src="./img/index/mensaje.gif" alt="Icono de contacto - sobre"
           /></a>
         </li>
       </ul>
@@ -77,11 +90,11 @@
     </div>
     <nav class="navDesktop fixed-top">
       <ul class="">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#statement">Statement</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inicio" class="sombra">Inicio</a></li>
+        <li><a href="#proyectos" class="sombra">Proyectos</a></li>
+        <li><a href="#bio" class="sombra">Bio</a></li>
+        <li><a href="#statement" class="sombra">Statement</a></li>
+        <li><a href="#contacto" class="sombra">Contacto</a></li>
       </ul>
     </nav>
     <!-- SECCION -->
@@ -430,5 +443,10 @@
     <!-- SCRIPTS  -->
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/form.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D61RNEWG91"
+    ></script>
   </body>
 </html>

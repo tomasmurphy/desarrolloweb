@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,100&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -214,6 +215,9 @@ textarea {
 button {
   text-transform: none; }
 
+[list]::-webkit-calendar-picker-indicator {
+  display: none; }
+
 button,
 [type="button"],
 [type="submit"] {
@@ -242,6 +246,10 @@ textarea {
 ::-webkit-inner-spin-button {
   height: auto; }
 
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield; }
+
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -265,6 +273,9 @@ textarea {
 
 iframe {
   border: 0; }
+
+[hidden] {
+  display: none !important; }
 
 .img-fluid {
   max-width: 100%;
@@ -443,6 +454,9 @@ iframe {
   margin-bottom: 0;
   list-style: none; }
 
+.card-text:last-child {
+  margin-bottom: 0; }
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem; } }
@@ -606,6 +620,23 @@ iframe {
   white-space: nowrap !important;
   border: 0 !important; }
 
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: currentColor;
+  opacity: 0.25; }
+
+.align-top {
+  vertical-align: top !important; }
+
+.align-middle {
+  vertical-align: middle !important; }
+
+.align-bottom {
+  vertical-align: bottom !important; }
+
 .overflow-hidden {
   overflow: hidden !important; }
 
@@ -620,6 +651,15 @@ iframe {
 
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+
+.border {
+  border: 1px solid #dee2e6 !important; }
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important; }
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important; }
 
 .w-100 {
   width: 100% !important; }
@@ -651,6 +691,9 @@ iframe {
 
 .p-3 {
   padding: 1rem !important; }
+
+.pe-3 {
+  padding-right: 1rem !important; }
 
 .fs-3 {
   font-size: calc(1.3rem + 0.6vw) !important; }
@@ -701,10 +744,14 @@ iframe {
     margin-left: 1rem !important; } }
 
 @media (min-width: 992px) {
+  .d-lg-inline {
+    display: inline !important; }
   .d-lg-block {
     display: block !important; }
   .d-lg-none {
-    display: none !important; } }
+    display: none !important; }
+  .pe-lg-3 {
+    padding-right: 1rem !important; } }
 
 @media (min-width: 1200px) {
   .fs-3 {
@@ -793,11 +840,17 @@ a {
     margin-bottom: 1%;
     margin-right: 3%; }
 
+.imgRedonda.floatRigth {
+  margin-right: 10%;
+  float: right; }
+
 /* NAVEGACION */
 nav {
   opacity: 1;
   position: fixed;
   display: flex; }
+  nav .sombra {
+    text-shadow: 0px 0.5px #132f57; }
   nav ul {
     text-align: center;
     color: #132f57;
@@ -1174,37 +1227,30 @@ footer {
     margin-bottom: 2%;
     font-size: 2rem; }
   #cv h3, #cv .h3 {
-    background-color: #132f57;
-    color: #e5e9ee;
+    color: #132f57;
     font-family: "Josefin";
-    padding: 1%;
-    padding-left: 2%;
-    font-size: 1.1rem;
-    width: 100%;
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 1rem; }
+    padding-left: 5%;
+    font-size: 1.3rem;
+    width: 100%; }
     #cv h3:hover, #cv .h3:hover {
       color: #7e8288;
       opacity: 0.9; }
-    @media screen and (min-width: 768px) {
-      #cv h3, #cv .h3 {
-        width: 60%; } }
+    #cv h3 i, #cv .h3 i {
+      color: #132f57; }
   #cv hr {
     color: #132f57; }
   #cv p {
     background-color: #e5e9ee;
     color: #132f57;
     font-family: "Josefin";
-    text-align: left;
     font-size: 1rem;
     font-weight: 400;
-    width: auto; }
+    padding-left: 1%; }
     @media screen and (min-width: 768px) {
       #cv p {
         font-size: 1.2rem; } }
   #cv a {
-    background-color: #e5e9ee;
-    color: #132f57;
+    color: #e5e9ee;
     font-family: "Josefin";
     text-align: left;
     font-size: 1rem; }
@@ -1213,9 +1259,48 @@ footer {
     @media screen and (min-width: 768px) {
       #cv a {
         font-size: 1.2rem; } }
+  #cv .p {
+    color: #e5e9ee;
+    font-family: "Josefin";
+    text-align: left;
+    font-size: 1rem; }
+    #cv .p:hover {
+      color: #7e8288; }
+    @media screen and (min-width: 768px) {
+      #cv .p {
+        font-size: 1.2rem; } }
   #cv .imgRedonda {
     margin-left: 5%;
     margin-bottom: 2rem; }
+  #cv .fondoAzul {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #132f57;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #cv .fondoAzul {
+        align-items: center; } }
+  #cv i {
+    color: #e5e9ee;
+    font-family: "Josefin";
+    font-size: 1.7rem;
+    line-height: normal; }
+    #cv i:hover {
+      color: #7e8288; }
+    @media screen and (min-width: 768px) {
+      #cv i {
+        font-size: 1.2rem; } }
+  #cv .imgRedonda.floatRigth {
+    float: none; }
+    @media screen and (min-width: 768px) {
+      #cv .imgRedonda.floatRigth {
+        float: right;
+        margin-right: 10%; } }
 
 /* PARQUES NACIONALES */
 #parquesNacionales {
