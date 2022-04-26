@@ -4112,7 +4112,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(229, 233, 238, 0.5);
   border-radius: 0.25rem; }
   .toast.showing {
     opacity: 0; }
@@ -5153,7 +5153,7 @@ textarea.form-control-lg {
   display: none !important; }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  box-shadow: 0 0.5rem 1rem rgba(229, 233, 238, 0.5) !important; }
 
 .shadow-sm {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
@@ -8082,7 +8082,8 @@ footer {
   #proyectos h5, #proyectos .h5 {
     margin: auto;
     font-size: 1.7rem;
-    color: #e5e9ee; }
+    color: #e5e9ee;
+    text-shadow: 0 0.5rem 1rem rgba(229, 233, 238, 0.5); }
     @media screen and (min-width: 768px) {
       #proyectos h5, #proyectos .h5 {
         font-size: 2.2rem;
@@ -8512,6 +8513,116 @@ footer {
     #losPaisajesDelFrio .row {
       margin-bottom: 1rem; } }
 
+#foragingForPigments {
+  padding-top: 2.5rem;
+  padding-bottom: 2.6rem;
+  width: auto;
+  height: 100%;
+  background-color: #e5e9ee;
+  color: #132f57; }
+  @media screen and (min-width: 768px) {
+    #foragingForPigments {
+      padding-top: 2.5rem; } }
+  #foragingForPigments h2, #foragingForPigments .h2,
+  #foragingForPigments p {
+    color: #132f57; }
+  #foragingForPigments .cajaDeCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 8rem;
+    margin-right: 5rem; }
+    @media only screen and (min-width: 350px) {
+      #foragingForPigments .cajaDeCajas {
+        margin-bottom: 10rem; } }
+    @media only screen and (min-width: 522px) {
+      #foragingForPigments .cajaDeCajas {
+        margin-bottom: 14rem; } }
+  #foragingForPigments .cajaImagen {
+    width: 10rem;
+    height: 8rem;
+    margin-right: -5rem;
+    margin-bottom: -3rem;
+    transition: all 1s;
+    opacity: 0.3;
+    z-index: 0; }
+    @media only screen and (min-width: 350px) {
+      #foragingForPigments .cajaImagen {
+        width: 12rem;
+        height: 10rem; } }
+    @media only screen and (min-width: 450px) {
+      #foragingForPigments .cajaImagen {
+        width: 14rem;
+        height: 10rem; } }
+    @media only screen and (min-width: 522px) {
+      #foragingForPigments .cajaImagen {
+        width: 18rem;
+        height: 14rem; } }
+    #foragingForPigments .cajaImagen:hover {
+      opacity: 1;
+      z-index: 1; }
+    #foragingForPigments .cajaImagen img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0.5rem 1rem rgba(229, 233, 238, 0.5); }
+
+footer {
+  z-index: 100; }
+
+.indice {
+  z-index: 2; }
+
+#invernal {
+  padding-top: 2.5rem;
+  padding-bottom: 2.6rem;
+  width: auto;
+  background-color: #e5e9ee;
+  color: #132f57; }
+  @media screen and (min-width: 768px) {
+    #invernal {
+      padding-top: 2.5rem; } }
+  #invernal h2, #invernal .h2,
+  #invernal p {
+    color: #132f57; }
+  #invernal img {
+    object-fit: cover; }
+  #invernal p {
+    font-weight: bold; }
+
+#blueLove {
+  padding-top: 2.5rem;
+  padding-bottom: 2.6rem;
+  width: auto;
+  height: 100%;
+  background-color: #132f57;
+  text-decoration-color: #e5e9ee; }
+  @media screen and (min-width: 768px) {
+    #blueLove {
+      padding-top: 2.5rem; } }
+  #blueLove p {
+    color: #e5e9ee;
+    font-size: 1.5rem; }
+
+#hornearEnPozo {
+  padding-top: 2.5rem;
+  padding-bottom: 2.6rem;
+  width: auto;
+  background-color: #e5e9ee;
+  color: #132f57; }
+  @media screen and (min-width: 768px) {
+    #hornearEnPozo {
+      padding-top: 2.5rem; } }
+  #hornearEnPozo h2, #hornearEnPozo .h2,
+  #hornearEnPozo p {
+    color: #132f57; }
+  #hornearEnPozo img {
+    object-fit: cover;
+    padding-bottom: 2%; }
+  #hornearEnPozo .sombra {
+    box-shadow: 0 0 0 10px black; }
+
 /* REVELADOS ORGANICOS */
 #reveladosOrganicos {
   padding-top: 2.5rem;
@@ -8583,6 +8694,32 @@ footer {
       opacity: 0.5; }
   #reveladosOrganicos .centrar {
     padding-left: 50%; }
+
+#losLugaresDondeTeAme {
+  padding-top: 2.5rem;
+  padding-bottom: 2.6rem;
+  width: auto;
+  height: 100%;
+  background-color: #132f57;
+  text-decoration-color: #e5e9ee; }
+  @media screen and (min-width: 768px) {
+    #losLugaresDondeTeAme {
+      padding-top: 2.5rem; } }
+  #losLugaresDondeTeAme p {
+    color: #e5e9ee;
+    font-size: 1.5rem; }
+  #losLugaresDondeTeAme h2, #losLugaresDondeTeAme .h2 {
+    line-height: normal; }
+  #losLugaresDondeTeAme .carousel-inner {
+    text-align: center;
+    vertical-align: middle;
+    height: auto; }
+  #losLugaresDondeTeAme .carousel .item > img {
+    display: inline-block;
+    height: 100%; }
+
+.azul {
+  background-color: #132f57; }
 
 figure {
   position: relative;

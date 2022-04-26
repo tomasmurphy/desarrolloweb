@@ -310,6 +310,139 @@
     }
   }
 }
+// FORAGING FOR PIGMENTS
+#foragingForPigments {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  .cajaDeCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 8rem;
+    margin-right: 5rem;
+    @media only screen and (min-width: 350px) {
+      margin-bottom: 10rem;
+    }
+    @media only screen and (min-width: 522px) {
+      margin-bottom: 14rem;
+  }}
+  .cajaImagen {
+    width: 10rem;
+    height: 8rem;
+    margin-right: -5rem;
+    margin-bottom: -3rem;
+    transition: all 1s;
+    opacity: 0.3;
+    z-index: 0;
+    @media only screen and (min-width: 350px) {
+      width: 12rem;
+      height: 10rem;
+    }
+    @media only screen and (min-width: 450px) {
+      width: 14rem;
+      height: 10rem;
+    }
+    @media only screen and (min-width: 522px) {
+      width: 18rem;
+      height: 14rem;
+    }
+    &:hover {
+      opacity: 1;
+      z-index: 1;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+footer {
+  z-index: 100;
+}
+.indice {
+  z-index: 2;
+}
+// INVERNAL
+#invernal {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  img {
+    object-fit: cover;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+// BLUE LOVE
+#blueLove {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $blanco;
+    font-size: 1.5rem;
+  }
+}
+// HORNEAR EN POZO
+#hornearEnPozo {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  img {
+    object-fit: cover;
+    padding-bottom: 2%;
+  }
+  .sombra {
+    box-shadow: 0 0 0 10px black;
+  }
+}
 /* REVELADOS ORGANICOS */
 #reveladosOrganicos {
   padding-top: $padmob;
@@ -396,4 +529,38 @@
   & .centrar {
     padding-left: 50%;
   }
+}
+
+// LOS LUGARES DONDE TE AME
+#losLugaresDondeTeAme {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $blanco;
+    font-size: 1.5rem;
+  }
+  h2 {
+    line-height: normal;
+  }
+  .carousel-inner {
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+  }
+  .carousel .item > img {
+    display: inline-block;
+    height: 100%;
+  }
+}
+.azul{
+  background-color: $azul;
 }
