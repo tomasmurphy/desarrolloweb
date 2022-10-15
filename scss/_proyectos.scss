@@ -350,7 +350,7 @@
     opacity: 0.3;
     z-index: 0;
     @media only screen and (min-width: 350px) {
-      width: 12rem;
+      width: 12.5rem;
       height: 10rem;
     }
     @media only screen and (min-width: 450px) {
@@ -417,6 +417,9 @@ footer {
   & p {
     color: $blanco;
     font-size: 1.5rem;
+  }
+  img{
+    border-radius: 2rem;
   }
 }
 // HORNEAR EN POZO
@@ -559,6 +562,54 @@ footer {
   .carousel .item > img {
     display: inline-block;
     height: 100%;
+  }
+}
+.azul{
+  background-color: $azul;
+}
+// UN REFLEJO AZUL DE INVIERNO
+#unReflejoAzulDeInvierno {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $blanco;
+    font-size: 1.5rem;
+  }
+  h2 {
+    line-height: normal;
+  }
+  .carousel-inner {
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+  }
+  .carousel .item > img {
+    display: inline-block;
+    height: 100%;
+  }
+  .almacen{
+    display: flex;
+    width: 800px;
+    
+    
+    // img{
+    //   display: block;
+    // }
+    i{
+      position: fixed;
+      top: 530px;
+      left: 630px;
+      color: $azul;
+      font-size: 2rem;
+    }
   }
 }
 .azul{

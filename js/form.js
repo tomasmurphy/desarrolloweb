@@ -1,51 +1,34 @@
-$(function () {
-  function after_form_submitted(data) {
-    if (data.result == "success") {
-      $("form#reused_form").hide();
-      $("#success_message").show();
-      $("#error_message").hide();
-    } else {
-      $("#error_message").append("<ul></ul>");
+let items = document.querySelectorAll('.carousel .carousel-item')
 
-      jQuery.each(data.errors, function (key, val) {
-        $("#error_message ul").append("<li>" + key + ":" + val + "</li>");
-      });
-      $("#success_message").hide();
-      $("#error_message").show();
-
-      //reverse the response on the button
-      $('button[type="button"]', $form).each(function () {
-        $btn = $(this);
-        label = $btn.prop("orig_label");
-        if (label) {
-          $btn.prop("type", "submit");
-          $btn.text(label);
-          $btn.prop("orig_label", "");
-        }
-      });
-    } //else
+items.forEach((el) => {
+  const minPerSlide = 3
+  let next = el.nextElementSibling
+  for (var i = 1; i < minPerSlide; i++) {
+    if (!next) {
+      // wrap carousel by using first child
+      next = items[0]
+    }
+    let cloneChild = next.cloneNode(true)
+    el.appendChild(cloneChild.children[0])
+    next = next.nextElementSibling
   }
+})
 
-  $("#reused_form").submit(function (e) {
-    e.preventDefault();
+function traerId() {
+  const url = window.location;
+  const hash = url.hash
+  const id = hash.split("#")[1]
+  return id
+};
+const modal = document.querySelector('#gracias');
+const cerrarModal = document.querySelector('#cerrarModal');
 
-    $form = $(this);
-    //show some response on the button
-    $('button[type="submit"]', $form).each(function () {
-      $btn = $(this);
-      $btn.prop("type", "button");
-      $btn.prop("orig_label", $btn.text());
-      $btn.text("Sending ...");
-    });
+function mostrarModal() {
+  modal.classList.add("show", "d-block")
+};
 
-    $.ajax({
-      type: "POST",
-      url: "handler.php",
-      dаta: $form.serialize(),
-      success: after_form_submitted,
-      dataType: "json",
-    });
-  });
-});
-
-
+cerrarModal.addEventListener("click", () => {
+  modal.classList.remove("show", "d-block")
+})
+    
+traerId() === "gracias"? mostrarModal() : ""
