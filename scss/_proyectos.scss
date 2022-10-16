@@ -340,7 +340,8 @@
     }
     @media only screen and (min-width: 522px) {
       margin-bottom: 14rem;
-  }}
+    }
+  }
   .cajaImagen {
     width: 10rem;
     height: 8rem;
@@ -418,7 +419,7 @@ footer {
     color: $blanco;
     font-size: 1.5rem;
   }
-  img{
+  img {
     border-radius: 2rem;
   }
 }
@@ -564,7 +565,7 @@ footer {
     height: 100%;
   }
 }
-.azul{
+.azul {
   background-color: $azul;
 }
 // UN REFLEJO AZUL DE INVIERNO
@@ -595,23 +596,45 @@ footer {
     display: inline-block;
     height: 100%;
   }
-  .almacen{
-    display: flex;
-    width: 800px;
-    
-    
-    // img{
-    //   display: block;
-    // }
-    i{
-      position: fixed;
-      top: 530px;
-      left: 630px;
-      color: $azul;
-      font-size: 2rem;
+  .almacen {
+    position: relative;
+
+    img {
+      position: relative;
+    }
+    i {
+      position: absolute;
+      color: $blanco;
+      background-color: $azul;
+      font-size: 1em;
+      width: 2rem;
+      border-radius: 50%;
+      text-align: center;
+      justify-content: center;
+      padding-top: .3rem;
+    }
+    .pileta {
+      top: 71%;
+      left: 75%;
+    }
+    .mandarina {
+      top: 54%;
+      left: 69%;
+    }
+    .fuente {
+      top: 71%;
+      left: 5%;
+    }
+    .living {
+      top: 35%;
+      left: 20%;
+    }
+    .arriba {
+      top: 20%;
+      left: 57%;
     }
   }
 }
-.azul{
+.azul {
   background-color: $azul;
 }

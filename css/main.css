@@ -8743,14 +8743,34 @@ footer {
     display: inline-block;
     height: 100%; }
   #unReflejoAzulDeInvierno .almacen {
-    display: flex;
-    width: 800px; }
+    position: relative; }
+    #unReflejoAzulDeInvierno .almacen img {
+      position: relative; }
     #unReflejoAzulDeInvierno .almacen i {
-      position: fixed;
-      top: 530px;
-      left: 630px;
-      color: #132f57;
-      font-size: 2rem; }
+      position: absolute;
+      color: #e5e9ee;
+      background-color: #132f57;
+      font-size: 1em;
+      width: 2rem;
+      border-radius: 50%;
+      text-align: center;
+      justify-content: center;
+      padding-top: .3rem; }
+    #unReflejoAzulDeInvierno .almacen .pileta {
+      top: 71%;
+      left: 75%; }
+    #unReflejoAzulDeInvierno .almacen .mandarina {
+      top: 54%;
+      left: 69%; }
+    #unReflejoAzulDeInvierno .almacen .fuente {
+      top: 71%;
+      left: 5%; }
+    #unReflejoAzulDeInvierno .almacen .living {
+      top: 35%;
+      left: 20%; }
+    #unReflejoAzulDeInvierno .almacen .arriba {
+      top: 20%;
+      left: 57%; }
 
 .azul {
   background-color: #132f57; }
