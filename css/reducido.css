@@ -1764,7 +1764,7 @@ footer {
     padding-top: 3rem;
     font-family: "Josefin";
     text-align: end;
-    background: saddlebrown;
+    background: #011610;
     transition: opacity 0.4s linear;
     cursor: pointer;
     position: absolute;
@@ -1774,9 +1774,9 @@ footer {
     right: 0.8rem;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
-    border-left: 1.7rem dashed black;
-    border-right: 1.7rem dashed black; }
+    opacity: 0.6;
+    border-left: 1.7rem dashed grey;
+    border-right: 1.7rem dashed grey; }
     #reveladosOrganicos figure a:hover {
       opacity: 0; }
   #reveladosOrganicos .cajaCelu {
