@@ -1,5 +1,6 @@
-node_modules/
-scss/
+node_modules
+css/main.css
+scss
 seo.txt
 package-lock.json
 package.json
